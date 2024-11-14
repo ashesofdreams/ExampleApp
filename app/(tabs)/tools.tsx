@@ -1,12 +1,10 @@
 import {
   Text,
-  View,
   StyleSheet,
   SafeAreaView,
   ScrollView,
   StatusBar,
   Pressable,
-  Alert,
   Dimensions,
   FlatList,
 } from "react-native";
@@ -19,7 +17,7 @@ const toolscreen = () => {
   };
   const itemData = [
     { id: "1", name: "相机", router: "camera" },
-    { id: "2", name: "工具1", router: "+not-found" },
+    { id: "2", name: "表单", router: "form" },
   ];
   return (
     <SafeAreaView style={styles.container}>
@@ -60,7 +58,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     justifyContent: "center",
     flexDirection: "row",
-    flexWrap: "wrap",
     gap: 10,
   },
   viewItem: {
